@@ -1,44 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css" />
   <title>Frontend Mentor | Tip calculator app</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
+
 <body>
+    <div class="header">SPLI </br> TTER</div>
+    <div class="bill-card">
+      <label for="bill">Bill</label>
+      <div class="input-wrapper">
+        <img src="./images/icon-dollar.svg" alt="dollar-icon">
+        <input class="user-input" type="text" name="bill" id="input-bill" placeholder="0.0">
+      </div>
 
-  Bill
+      <label>Select Tip %</label>
+      <div class="tip-options">
+        <button class="dark-cyan">5%</button>
+        <button class="dark-cyan">10%</button>
+        <button class="strong-cyan">15%</button>
+        <button class="dark-cyan">25%</button>
+        <button class="dark-cyan">50%</button>
+        <input class="input-text" type="text" name="custom-tip" id="custom-tip" placeholder="Custom">
+      </div>
 
-  Select Tip %
-  5%
-  10%
-  15%
-  25%
-  50%
-  Custom
+      <label>Number of People</label>
+      <div class="input-wrapper">
+        <img src="./images/icon-person.svg" alt="person-icon">
+        <input class="input-text" type="text" name="total-people" id="total-people" placeholder="1">
+    </div>
 
-  Number of People
+      <div>
+        <label>Tip Amount</label>
+        <p>/ person</p>
 
-  Tip Amount
-  / person
+        <label>Total</label>
+        <p>/ person</p>
 
-  Total
-  / person
+        <button class="strong-cyan">Reset</button>
+      </div>
 
-  Reset
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+      <!-- <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="https://github.com/michealap">Micheala Palmer</a>.
+      </div> -->
+    </div>
 </body>
+
 </html>
